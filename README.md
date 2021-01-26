@@ -1,2 +1,2 @@
 # TouringNat
-CSS and Sass project with scss syntax
+CSS and Sass project with scss syntax, no photoshop or any picture editing used. is all CSS
