@@ -7,12 +7,24 @@
 }
 
 html {
-  /* 1 rem = 10 px */
   /* browser default is 16px */
   /* this overwrites user zoom in abilities so is better to convert the 16px into % */
   /* divide 10(what we want to convert to) by 16(the default of the browser) = 0.625  */
   /* font-size: 10px; */
-  font-size: 62.5%;
+  font-size: 62.5%; //1 rem = 10px; 10px/16pc = 62.5%
+  
+  @include respond(tab-land){ // width < 1200?
+    font-size: 56.25%; // 1 rem = 9px, 9/16 = 56.25% 
+  }
+  @include respond(tab-port){ // width < 900?
+    font-size: 50%; // 1rem = 8px, 8/16 = 50%
+  }
+  // @include respond(phone){ // width < 600?
+  //   font-size: 30%; // 1rem = 4.8px
+  // }
+  @include respond(big-desktop){
+    font-size: 75%; // 1rem = 12, 12/16 = 75%
+  }
 }
 
 body {
