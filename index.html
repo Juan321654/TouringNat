@@ -25,11 +25,11 @@
       <div class="navigation__background">&nbsp;</div>
       <nav class="navigation__nav">
         <ul class="navigation__list">
-          <li class="nagivation__item"><a href="#" class="navigation__link"><span>01</span>About TouringNat</a></li>
-          <li class="nagivation__item"><a href="#" class="navigation__link"><span>02</span>Your benefits</a></li>
-          <li class="nagivation__item"><a href="#" class="navigation__link"><span>03</span>Popular tours</a></li>
-          <li class="nagivation__item"><a href="#" class="navigation__link"><span>04</span>Stories</a></li>
-          <li class="nagivation__item"><a href="#" class="navigation__link"><span>05</span>Book now</a></li>
+          <li class="nagivation__item"><a href="#about" class="navigation__link"><span>01</span>About TouringNat</a></li>
+          <li class="nagivation__item"><a href="#benefits" class="navigation__link"><span>02</span>Your benefits</a></li>
+          <li class="nagivation__item"><a href="#popular" class="navigation__link"><span>03</span>Popular tours</a></li>
+          <li class="nagivation__item"><a href="#stories" class="navigation__link"><span>04</span>Stories</a></li>
+          <li class="nagivation__item"><a href="#book" class="navigation__link"><span>05</span>Book now</a></li>
         </ul>
       </nav>
     </div>
@@ -43,12 +43,12 @@
           <span class="heading-primary--main">Outdoors</span>
           <span class="heading-primary--sub">is where life happens</span>
         </h1>
-        <a href="#section-tours" class="btn btn--white btn--animated">Discover our tours</a>
+        <a href="#section-tours" id="section-tours" class="btn btn--white btn--animated">Discover our tours</a>
       </div>
     </header>
 
     <main>
-      <section class="section-about">
+      <section class="section-about" id="about">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">
             Exciting tours for adventurous people
@@ -63,7 +63,7 @@
             <h3 class="heading-tertiary u-margin-bottom-small">Live adventures like you never have before</h3>
             <p class="paragraph">Debitis repudiandae hic consequatur similique aperiam saepe ipsam fuga tenetur fugiat ea enim ab, dolore commodi optio sint a iusto quia. Laboriosam!</p>
 
-            <a href="#" class="btn-text">Learn more &rarr;</a>
+            <a href="#stories" class="btn-text">Learn more &rarr;</a>
           </div>
           <div class="col-1-of-2">
             <div class="composition">
@@ -75,7 +75,7 @@
         </div>
       </section>
 
-      <section class="section-features"> 
+      <section class="section-features" id="benefits"> 
         <div class="row">
 
           <div class="col-1-of-4">
@@ -122,7 +122,7 @@
       </section>
 
       <section class="section-tours" id="section-tours">
-        <div class="u-center-text u-margin-bottom-big">
+        <div class="u-center-text u-margin-bottom-big" id="popular">
           <h2 class="heading-secondary">
             Most popular tours
           </h2>
@@ -232,7 +232,7 @@
         </div>
 
         <div class="u-center-text u-margin-top-huge">
-          <a href="#" class="btn btn--green">Discover all tours</a>
+          <a href="#popular" class="btn btn--green">Discover all tours</a>
         </div>
 
       </section>
@@ -247,7 +247,7 @@
           </video>
         </div>
 
-        <div class="u-center-text u-margin-bottom-big">
+        <div class="u-center-text u-margin-bottom-big" id="stories">
           <h2 class="heading-secondary">
             We make people genuinely happy
           </h2>
@@ -282,12 +282,12 @@
         </div>
 
         <div class="u-center-text u-margin-top-huge">
-          <a href="#" class="btn-text">Read all stories &rarr;</a>
+          <a href="#stories" class="btn-text">Read all stories &rarr;</a>
         </div>
 
       </section>
 
-      <section class="section-book">
+      <section class="section-book" id="book">
         <div class="row">
           <div class="book">
             <div class="book__form">
@@ -337,7 +337,7 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <div class="footer__logo-box">
         <img src="img/logo-white.png" alt="Full logo" class="footer__logo">
       </div>
@@ -345,17 +345,18 @@
         <div class="col-1-of-2">
           <div class="footer__navigation">
             <ul class="footer__list">
-              <li class="footer__item"><a href="#" class="footer__link">Company</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Contact us</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Carrers</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Privacy policy</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
+              <li class="footer__item"><a href="#footer" class="footer__link">Company</a></li>
+              <li class="footer__item"><a href="#footer" class="footer__link">Contact us</a></li>
+              <li class="footer__item"><a href="#footer" class="footer__link">Carrers</a></li>
+              <li class="footer__item"><a href="#footer" class="footer__link">Privacy policy</a></li>
+              <li class="footer__item"><a href="#footer" class="footer__link">Terms</a></li>
             </ul>
           </div>
         </div>
         <div class="col-1-of-2">
           <p class="footer__copyright">
-            Hello, my name is <a href="#" class="footer__link">Juan Camacho</a> and if you want you may check my <a href="#" class="footer__link">portfolio</a>
+            Hello, my name is <a href="#footer" class="footer__link">Juan Camacho</a>, This page is not meant to be functional, it is just to show some of the powers of CSS, no JavaScript was used for this project. And if you want,
+            You can also check my <a href="https://juancamachoportfolio.netlify.app/" target="_blank" class="footer__link">portfolio</a> for more projects
           </p>
         </div>
       </div>
@@ -372,7 +373,7 @@
           <h2 class="heading-secondary u-margin-bottom-small">Start booking now</h2>
           <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before booking</h3>
           <p class="popup__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, quas amet? Provident facilis, temporibus quia voluptatem cupiditate, eum tempora nulla ipsa odit tenetur unde quos. Molestiae incidunt ad error praesentium perferendis dolorum aut ex necessitatibus, odio tenetur quo, debitis vero totam assumenda facilis. Voluptate, ea ab sint architecto placeat sit! Suscipit fugiat excepturi nostrum cumque possimus beatae fuga maiores aliquid!</p>
-          <a href="#" class="btn btn--green">Book now</a>
+          <a href="#book" class="btn btn--green">Book now</a>
         </div>
       </div>
     </div>
